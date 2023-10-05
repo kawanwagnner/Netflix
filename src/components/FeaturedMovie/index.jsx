@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-export default ({ item }) => {
+const FeaturedMovie = ({ item }) => {
   let firstDate = new Date(item.first_air_date);
   let genres = [];
 
@@ -9,7 +9,7 @@ export default ({ item }) => {
     genres.push(item.genres[i].name);
   }
 
-  let description = item.overview;
+  let description = item.overview || "";
   if (description.length > 200) {
     description = description.substring(0, 200) + "...";
   }
@@ -20,6 +20,7 @@ export default ({ item }) => {
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
+        zIndex: 1,
         backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`,
       }}
     >
@@ -49,3 +50,5 @@ export default ({ item }) => {
     </section>
   );
 };
+
+export default FeaturedMovie;

@@ -2,10 +2,32 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #222
-    url("https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/c66c94fd-7bcd-4be0-ac29-0f44d08b80b0/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
-    center center no-repeat;
-  background-size: cover;
+  background-color: #222;
+}
+
+.bg-container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.background {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -webkit-transform: scale(1.25) translateY(-10%);
+  -moz-transform: scale(1.25) translateY(-10%);
+  -ms-transform: scale(1.25) translateY(-10%);
+  transform: scale(1.25) translateY(-10%);
 }
 
 .home::after {
@@ -378,7 +400,54 @@
 /* Landing Page */
 
 .landing--page {
+  width: 100%;
   height: 100vh;
-  background: #222;
-  margin-top: 10px;
+  background: #000;
+  margin: -90px 0 10px 0;
+}
+
+.default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Adicionado */
+}
+
+.container-message {
+  z-index: 1;
+  width: 100%;
+}
+
+.container-message h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container-message p {
+  margin: 1rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.default-ltr-cache-bjn8wh {
+  position: relative;
+}
+
+.default-ltr-cache-1d3w5wq {
+  width: 100%;
+  height: auto;
+}
+
+.default-ltr-cache-m5f3qu.e15c37ii14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.default-ltr-cache-m5f3qu.e15c37ii14 video {
+  width: 100%;
+  height: auto;
 }

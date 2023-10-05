@@ -38,6 +38,14 @@ const HomePage = () => {
         </nav>
       </header>
 
+      <div className="bg-container">
+        <div className="background">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/c66c94fd-7bcd-4be0-ac29-0f44d08b80b0/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+            alt="Fundo da página"
+          />
+        </div>
+      </div>
       <section className="container--home">
         <div className="content">
           <div className="content--text">
@@ -88,7 +96,45 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <section className="landing--page"></section>
+      <section className="landing--page">
+        <div className="default">
+          <div className="container-message">
+            <h1>Aproveite na TV</h1>
+            <p>
+              Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              aparelhos de Blu-ray e outros dispositivos.
+            </p>
+          </div>
+          <div class="default-ltr-cache-bjn8wh">
+            <img
+              alt=""
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+              data-uia="nmhp-card-animation-asset-image"
+              class="default-ltr-cache-1d3w5wq"
+            />
+            <div class="video">
+              <video
+                data-uia="nmhp-card-animation-asset-video"
+                autoplay=""
+                playsinline=""
+                muted=""
+                loop=""
+              >
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="default-ltr-cache-0"></div>
+              <div
+                data-uia="nmhp-card-animation-asset-custom"
+                aria-hidden="true"
+                class="default-ltr-cache-0 e15c37ii13"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
