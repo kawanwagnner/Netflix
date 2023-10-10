@@ -1,5 +1,4 @@
-import React from "react";
-
+import PropTypes from 'prop-types';
 import "./index.css";
 
 const perguntasFrequentes = [
@@ -17,6 +16,10 @@ const Question = ({ text }) => {
       <span>{text}</span> <img src="/moreOptions.svg" className="more" />
     </div>
   );
+};
+
+Question.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export { perguntasFrequentes, Question };

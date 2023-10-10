@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import InviteWatching from "../../components/InviteWatching";
 import { perguntasFrequentes, Question } from "../../components/Quests";
@@ -52,10 +51,10 @@ const HomePage = () => {
             <i className="popcorn--img">
               <img src="/Popcorn.svg" />
             </i>
-            <div class="text-promotion">
+            <div className="text-promotion">
               <strong>A Netflix que você adora por apenas R$18,90.</strong>
               <p>Assine o plano Padrão com anúncios.</p>
-              <button role="link" class="about--more">
+              <button role="link" className="about--more">
                 Saiba mais
                 <img src="/arrowRight.svg" />
               </button>
@@ -70,7 +69,7 @@ const HomePage = () => {
               aparelhos de Blu-ray e outros dispositivos.
             </p>
           </div>
-          <div class="container-video">
+          <div className="container-video">
             <img
               alt="Mock"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
@@ -91,7 +90,7 @@ const HomePage = () => {
               laptop e TV.
             </p>
           </div>
-          <div class="container-video-reverse">
+          <div className="container-video-reverse">
             <img
               alt="Mock"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
@@ -112,7 +111,7 @@ const HomePage = () => {
               um espaço feito só para elas, sem pagar a mais por isso.
             </p>
           </div>
-          <div class="container-video">
+          <div className="container-video">
             <img
               alt="Mock"
               src="https://occ-0-1310-1740.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABUIQf-EOyyk3NFohgiSUVv5tl73COXhof_N8Gz2GD6IqJ0Cz-DzUfRzj2NhSocLHDrNUlFL3NK2fDG6MCKzVHt3kCmSOjrf4SuVb.png?r=190"
@@ -126,21 +125,21 @@ const HomePage = () => {
               Disponíveis somente em planos sem anúncios.
             </p>
           </div>
-          <div class="container-video-reverse">
+          <div className="container-video-reverse">
             <img
               alt="Mock"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
             />
 
             <div className="mini-popUp">
-              <div class="img-popUp">
+              <div className="img-popUp">
                 <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
               </div>
-              <div class="container-text-serie">
-                <div class="name-serie">Stranger Things</div>
-                <div class="loading-download">Download em andamento... </div>
+              <div className="container-text-serie">
+                <div className="name-serie">Stranger Things</div>
+                <div className="loading-download">Download em andamento... </div>
               </div>
-              <div aria-hidden="true" class="icon-smartphone"></div>
+              <div aria-hidden="true" className="icon-smartphone"></div>
             </div>
           </div>
         </div>
@@ -163,7 +162,7 @@ const HomePage = () => {
           <div className="columns">
             {" "}
             <div className="columns--1">
-              <div className="column">
+              <div className="column ">
                 <a href="#">Perguntas frequentes</a>
                 <a href="#">Relações com investidores</a>
                 <a href="#">Formas de assistir</a>

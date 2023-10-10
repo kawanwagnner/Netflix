@@ -463,9 +463,10 @@ strong {
   position: absolute;
   top: -40px;
   left: 0;
-  width: 100%;
+  width: 150vw;
   height: 0.5em;
   background-color: #222;
+  transform: translateX(-30%);
 }
 
 .container-message {
@@ -645,7 +646,7 @@ strong {
 .rodape h4 {
   display: block;
   color: #999;
-  padding-left: 11.9%;
+  padding-left: 15.9%;
   width: 100%;
 }
 
@@ -664,9 +665,16 @@ h4 > span {
   justify-content: center;
 }
 
+.columns--1,
+.columns--2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
 .column {
   width: 180px;
-  margin: 0 50px;
+  margin: 0 80px;
 }
 
 .column a {
@@ -701,28 +709,24 @@ h4 > span {
   .columns {
     display: flex;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: start;
+    position: relative;
+  }
+
+  .columns--1,
+  .columns--2 {
+    flex-direction: column;
+  }
+
+  .space-letter {
+    position: absolute;
+    bottom: -70px;
   }
 
   .rodape h4 {
     display: block;
     color: #999;
-    padding-left: 4%;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1020px) {
-  .columns {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-  }
-
-  .rodape h4 {
-    display: block;
-    color: #999;
-    padding-left: 4%;
+    padding-left: 5%;
     width: 100%;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Tmdb from "../../API/Tmdb";
 import MovieRow from "../../components/MovieRow/index";
 import FeaturedMovie from "../../components/FeaturedMovie/index";

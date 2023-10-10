@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 import "./index.css";
 
 const FeaturedMovie = ({ item }) => {
@@ -41,6 +41,19 @@ const FeaturedMovie = ({ item }) => {
       </div>
     </section>
   );
+};
+
+
+FeaturedMovie.propTypes = {
+  item: PropTypes.shape({
+    first_air_date: PropTypes.string.isRequired,
+    overview: PropTypes.string.isRequired,
+    backdrop_path: PropTypes.string.isRequired,
+    original_name: PropTypes.string.isRequired,
+    vote_average: PropTypes.string.isRequired,
+    number_of_seasons: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default FeaturedMovie;

@@ -1,5 +1,4 @@
-import React from "react";
-
+import PropTypes from 'prop-types';
 import "./index.css";
 
 const Landing = ({ urlImg, urlVideo }) => {
@@ -13,7 +12,7 @@ const Landing = ({ urlImg, urlVideo }) => {
             aparelhos de Blu-ray e outros dispositivos.
           </p>
         </div>
-        <div class="container-video">
+        <div className="container-video">
           <img alt="Mock" src={urlImg} />
           <video autoPlay playsInline muted loop>
             <source src={urlVideo} type="video/mp4" />
@@ -24,15 +23,9 @@ const Landing = ({ urlImg, urlVideo }) => {
   );
 };
 
-{
-  /* <Landing
-  urlImg={
-    "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-  }
-  urlVideo={
-    "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
-  }
-/>; */
-}
+Landing.propTypes = {
+  urlImg: PropTypes.string.isRequired,
+  urlVideo: PropTypes.string.isRequired,
+};
 
 export default Landing;

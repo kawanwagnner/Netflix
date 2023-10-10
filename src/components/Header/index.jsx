@@ -1,5 +1,4 @@
-import React from "react";
-
+import PropTypes from 'prop-types';
 import "./index.css";
 
 const Header = ({ black }) => {
@@ -15,11 +14,15 @@ const Header = ({ black }) => {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png?20201013161117"
             alt="Usuário"
-          />
+            />
         </a>
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  black: PropTypes.string.isRequired,
 };
 
 export default Header;
