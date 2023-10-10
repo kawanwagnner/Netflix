@@ -1,6 +1,7 @@
 .featured {
   height: 100vh;
   position: relative;
+  margin-bottom: 120px;
 }
 
 .featured--content {
@@ -8,7 +9,6 @@
   position: sticky;
   padding-left: 30px;
   padding-top: 180px;
-  padding-bottom: 150px;
 }
 
 .featured::before {

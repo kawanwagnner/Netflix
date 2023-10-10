@@ -1,5 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import InviteWatching from "../../components/InviteWatching";
+import { perguntasFrequentes, Question } from "../../components/Quests";
+import ButtonLanguage from "../../components/ButtonLanguage";
 
 import "./index.css";
 
@@ -13,25 +16,7 @@ const HomePage = () => {
           <img src="/NetflixLogo.svg" alt="/Logo Netflix" />
         </i>
         <nav className="navbar">
-          <i className="traslateIcon">
-            <img src="/traslateIcon.svg" />
-          </i>
-          <select className="language">
-            <option
-              selected=""
-              lang="pt"
-              value="pt-BR"
-              onClick={() => link("/")}
-            >
-              Português
-            </option>
-            <option lang="en" value="en-US">
-              English
-            </option>
-          </select>
-          <i className="arrowDown">
-            <img src="/arrowDown.svg" />
-          </i>
+          <ButtonLanguage />
           <button className="SignIn" onClick={() => link("/login")}>
             Entrar
           </button>
@@ -57,80 +42,161 @@ const HomePage = () => {
               Assista onde quiser. Cancele quando quiser.
             </h3>
             <br />
-            <h3 className="text--2">
-              Quer assistir? Informe seu email para criar ou reiniciar sua
-              assinatura.
-            </h3>
-          </div>
-
-          <div className="logon-form">
-            <input
-              type="email"
-              name="email"
-              className="email"
-              id="email"
-              placeholder="Email"
-            />
-
-            <button className="letsGo" onClick={() => link("/")}>
-              Vamos lá{" "}
-              <i className="arrowRight">
-                <img src="/arrowRight.svg" />
-              </i>
-            </button>
+            <InviteWatching />
           </div>
         </div>
       </section>
-      <div className="banner--bg">
-        <div className="container--banner">
-          <i className="popcorn--img">
-            <img src="/Popcorn.svg" />
-          </i>
-          <div class="text-promotion">
-            <p>A Netflix que você adora por apenas R$18,90.</p>
-            <p>Assine o plano Padrão com anúncios.</p>
-            <button role="link" class="about--more">
-              Saiba mais
-              <img src="/arrowRight.svg" />
-            </button>
+      <section className="landing--page">
+        <div className="banner--bg">
+          <div className="container--banner">
+            <i className="popcorn--img">
+              <img src="/Popcorn.svg" />
+            </i>
+            <div class="text-promotion">
+              <strong>A Netflix que você adora por apenas R$18,90.</strong>
+              <p>Assine o plano Padrão com anúncios.</p>
+              <button role="link" class="about--more">
+                Saiba mais
+                <img src="/arrowRight.svg" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <section className="landing--page">
-        <div className="default">
+        <div className="container-flex">
           <div className="container-message">
-            <h1>Aproveite na TV</h1>
-            <p>
+            <h1 className="title-mock">Aproveite na TV</h1>
+            <p className="text-mock">
               Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
               aparelhos de Blu-ray e outros dispositivos.
             </p>
           </div>
-          <div class="default-ltr-cache-bjn8wh">
+          <div class="container-video">
             <img
-              alt=""
+              alt="Mock"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-              data-uia="nmhp-card-animation-asset-image"
-              class="default-ltr-cache-1d3w5wq"
             />
-            <div class="video">
-              <video
-                data-uia="nmhp-card-animation-asset-video"
-                autoplay=""
-                playsinline=""
-                muted=""
-                loop=""
-              >
-                <source
-                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
-                  type="video/mp4"
-                />
-              </video>
-              <div class="default-ltr-cache-0"></div>
-              <div
-                data-uia="nmhp-card-animation-asset-custom"
-                aria-hidden="true"
-                class="default-ltr-cache-0 e15c37ii13"
-              ></div>
+            <video autoPlay playsInline muted loop>
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+        <div className="container-reverse hr">
+          <div className="container-message">
+            <h1 className="title-mock">Assista onde quiser</h1>
+            <p className="text-mock">
+              Assista a quantos filmes e séries quiser no celular, tablet,
+              laptop e TV.
+            </p>
+          </div>
+          <div class="container-video-reverse">
+            <img
+              alt="Mock"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+            />
+            <video autoPlay playsInline muted loop>
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+        <div className="container-flex hr">
+          <div className="container-message">
+            <h1 className="title-mock">Crie perfis para crianças</h1>
+            <p className="text-mock">
+              Deixe as crianças se aventurarem com seus personagens favoritos em
+              um espaço feito só para elas, sem pagar a mais por isso.
+            </p>
+          </div>
+          <div class="container-video">
+            <img
+              alt="Mock"
+              src="https://occ-0-1310-1740.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABUIQf-EOyyk3NFohgiSUVv5tl73COXhof_N8Gz2GD6IqJ0Cz-DzUfRzj2NhSocLHDrNUlFL3NK2fDG6MCKzVHt3kCmSOjrf4SuVb.png?r=190"
+            />
+          </div>
+        </div>
+        <div className="container-reverse hr">
+          <div className="container-message">
+            <h1 className="title-mock">Baixe séries para assistir offline</h1>
+            <p className="text-mock">
+              Disponíveis somente em planos sem anúncios.
+            </p>
+          </div>
+          <div class="container-video-reverse">
+            <img
+              alt="Mock"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+            />
+
+            <div className="mini-popUp">
+              <div class="img-popUp">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
+              </div>
+              <div class="container-text-serie">
+                <div class="name-serie">Stranger Things</div>
+                <div class="loading-download">Download em andamento... </div>
+              </div>
+              <div aria-hidden="true" class="icon-smartphone"></div>
+            </div>
+          </div>
+        </div>
+        <div className="common-questions hr">
+          <h1>Perguntas frequentes</h1>
+
+          {perguntasFrequentes.map((pergunta, index) => (
+            <Question key={index} text={pergunta} />
+          ))}
+        </div>
+
+        <div className="repetition-quest">
+          <InviteWatching />
+        </div>
+
+        <div className="rodape hr">
+          <h4>
+            Dúvidas? Ligue <span>0800 591 2876</span>
+          </h4>
+          <div className="columns">
+            {" "}
+            <div className="columns--1">
+              <div className="column">
+                <a href="#">Perguntas frequentes</a>
+                <a href="#">Relações com investidores</a>
+                <a href="#">Formas de assistir</a>
+                <a href="#">Informações corporativas</a>
+                <a href="#">Só na Netflix</a>
+                <div className="space-letter">
+                  <div className="visual-effect">
+                    <ButtonLanguage />
+                  </div>
+                  <br />
+                  <p>KawFlix Brasil</p>
+                </div>
+              </div>
+              <div className="column">
+                <a href="#">Central de Ajuda</a>
+                <a href="#">Carreiras</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Entre em contato</a>
+              </div>
+            </div>
+            <div className="columns--2">
+              <div className="column">
+                <a href="#">Conta</a>
+                <a href="#">Resgatar cartão pré-pago</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Teste de velocidade</a>
+              </div>
+              <div className="column">
+                <a href="#">Media Center</a>
+                <a href="#">Comprar cartão pré-pago</a>
+                <a href="#">Preferências de cookies</a>
+                <a href="#">Avisos legais</a>
+              </div>
             </div>
           </div>
         </div>

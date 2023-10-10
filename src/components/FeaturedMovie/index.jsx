@@ -3,11 +3,6 @@ import "./index.css";
 
 const FeaturedMovie = ({ item }) => {
   let firstDate = new Date(item.first_air_date);
-  let genres = [];
-
-  for (let i in item.genres) {
-    genres.push(item.genres[i].name);
-  }
 
   let description = item.overview || "";
   if (description.length > 200) {
@@ -41,9 +36,6 @@ const FeaturedMovie = ({ item }) => {
             <a className="add--button" href={`/list/add/${item.id}`}>
               + Minha Lista
             </a>
-          </div>
-          <div className="featured--genres">
-            <strong>Gêneros:</strong> {genres.join(", ")}
           </div>
         </div>
       </div>
