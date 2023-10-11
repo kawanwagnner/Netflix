@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import "./index.css";
 
 const FeaturedMovie = ({ item }) => {
@@ -43,16 +43,15 @@ const FeaturedMovie = ({ item }) => {
   );
 };
 
-
 FeaturedMovie.propTypes = {
   item: PropTypes.shape({
-    first_air_date: PropTypes.string.isRequired,
+    first_air_date: PropTypes.number.isRequired,
     overview: PropTypes.string.isRequired,
     backdrop_path: PropTypes.string.isRequired,
     original_name: PropTypes.string.isRequired,
-    vote_average: PropTypes.string.isRequired,
-    number_of_seasons: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+    vote_average: PropTypes.number.isRequired,
+    number_of_seasons: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
   }).isRequired,
 };
 

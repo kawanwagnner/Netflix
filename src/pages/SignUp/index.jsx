@@ -1,17 +1,20 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./index.css";
 
 const SignUp = () => {
+  const link = useNavigate();
+
   return (
     <div id="body">
-      {/* <header>
-        <div className="logo">
-          <a href="#">
-            <img src="/NetflixLogo.svg" alt="logo" />
-          </a>
-        </div>
-      </header> */}
+      <header className="header">
+        <img
+          onClick={() => link("/")}
+          id="logo"
+          src="/NetflixLogo.svg"
+          alt="logo"
+        />
+      </header>
       <section className="container">
         <div className="login">
           <h2>Entrar</h2>
@@ -39,8 +42,8 @@ const SignUp = () => {
           </div>
           <p className="description_footer">
             Esta página é protegida pelo Google reCAPTCHA para garantir que você
-            não é um robô
-            <span>Saiba mais.</span>
+            não é um robô.
+            <span> Saiba mais.</span>
           </p>
         </div>
       </section>

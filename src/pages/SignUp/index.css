@@ -1,9 +1,21 @@
+.header {
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+#logo {
+  width: 10.55em;
+  margin: 2.5% 0 0 3%;
+  cursor: pointer;
+}
+
 #body {
-  height: 120vh;
+  height: 150vh;
   width: 100%;
-  background-image: url(img/background.jpg);
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/c66c94fd-7bcd-4be0-ac29-0f44d08b80b0/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg)
+    center center no-repeat;
   background-image: cover;
-  background-repeat: no-repeat;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
 }
@@ -20,26 +32,16 @@
   left: 0;
 }
 
-.logo img {
-  width: 190px;
-}
-
-header {
-  padding: 20px;
-  position: relative;
-  z-index: 10;
-}
-
 .container {
   padding: 60px;
   z-index: 90;
   position: relative;
   max-width: 450px;
-  height: 550px;
+  height: 650px;
   margin-left: 50%;
   background-color: rgb(0, 0, 0, 0.75);
-  transform: translate(-50%, 20%);
-  border-radius: 10px;
+  transform: translate(-50%, 5%);
+  border-radius: 5px;
 }
 
 .container h2 {
@@ -93,7 +95,8 @@ header {
   justify-content: space-between;
   position: relative;
   font-size: 15px;
-  margin: 30px 0 30px 0;
+  margin: -10px 0 30px 0;
+  line-height: 10px;
 }
 
 .support .remember {
@@ -101,12 +104,24 @@ header {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  color: #fff;
+  color: #999;
+  font-size: 0.9em;
+}
+
+input[type="checkbox"] {
+  background-color: #222;
+  width: 16px;
+  height: 16px;
+}
+
+.remember span > input[type="checkbox"]:checked {
+  background-color: #fff;
 }
 
 .help a {
-  color: #b3b3b3;
+  color: #999;
   text-decoration: none;
+  font-size: 0.88em;
 }
 
 .footer {
@@ -115,13 +130,14 @@ header {
   gap: 8px;
   color: #b3b3b3;
   font-size: 15px;
-  margin-bottom: 25px;
+  margin-top: 75px;
+  margin-bottom: 15px;
 }
 
 .footer a {
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .description_footer {
