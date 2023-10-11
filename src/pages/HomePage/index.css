@@ -23,6 +23,7 @@
 .background img {
   width: 100%;
   height: 120vh;
+  object-fit: cover;
   -webkit-transform: scale(1.25) translateY(-10%);
   -moz-transform: scale(1.25) translateY(-10%);
   -ms-transform: scale(1.25) translateY(-10%);
@@ -572,6 +573,17 @@ strong {
   width: 500px;
 }
 
+@media (max-width: 960px) {
+  .container-flex,
+  .container-reverse {
+    display: inherit;
+  }
+
+  .container-message {
+    text-align: center;
+  }
+}
+
 /* mini download */
 
 .default-ltr-cache-1q4up1i {
@@ -641,13 +653,14 @@ strong {
   padding: 50px 0;
   background-color: #000;
   margin: 0;
+  padding: 0 80px;
 }
 
 .rodape h4 {
   display: block;
   color: #999;
-  padding-left: 15.9%;
   width: 100%;
+  margin-left: 67px;
 }
 
 h4 > span {
@@ -662,7 +675,7 @@ h4 > span {
 .columns {
   display: flex;
   align-items: baseline;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .columns--1,
@@ -674,7 +687,7 @@ h4 > span {
 
 .column {
   width: 180px;
-  margin: 0 80px;
+  margin: 0 70px;
 }
 
 .column a {
@@ -706,6 +719,10 @@ h4 > span {
 }
 
 @media (max-width: 1280px) {
+  .rodape {
+    padding: 0 0;
+  }
+
   .columns {
     display: flex;
     align-items: baseline;
@@ -726,7 +743,7 @@ h4 > span {
   .rodape h4 {
     display: block;
     color: #999;
-    padding-left: 5%;
+    padding-left: 0;
     width: 100%;
   }
 }
