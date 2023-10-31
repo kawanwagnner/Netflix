@@ -70,16 +70,18 @@ const HomePage = () => {
             </p>
           </div>
           <div className="container-video">
-            <img
-              alt="Mock"
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-            />
-            <video autoPlay playsInline muted loop>
-              <source
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
-                type="video/mp4"
+            <div className="video-e-img">
+              <img
+                alt="Mock"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
               />
-            </video>
+              <video autoPlay playsInline muted loop>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
           </div>
         </div>
         <div className="container-reverse hr">
@@ -91,19 +93,21 @@ const HomePage = () => {
             </p>
           </div>
           <div className="container-video-reverse">
-            <img
-              alt="Mock"
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
-            />
-            <video autoPlay playsInline muted loop>
-              <source
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
-                type="video/mp4"
+            <div className="video-e-img-reverse">
+              <img
+                alt="Mock"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
               />
-            </video>
+              <video autoPlay playsInline muted loop>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
           </div>
         </div>
-        <div className="container-flex hr">
+        <div className="container-flex-three hr">
           <div className="container-message">
             <h1 className="title-mock">Crie perfis para crianças</h1>
             <p className="text-mock">
@@ -131,13 +135,15 @@ const HomePage = () => {
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
             />
 
-            <div className="mini-popUp">
-              <div className="img-popUp">
+            <div className="mini-popup">
+              <div className="img-popup">
                 <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
               </div>
               <div className="container-text-serie">
                 <div className="name-serie">Stranger Things</div>
-                <div className="loading-download">Download em andamento... </div>
+                <div className="loading-download">
+                  Download em andamento...{" "}
+                </div>
               </div>
               <div aria-hidden="true" className="icon-smartphone"></div>
             </div>

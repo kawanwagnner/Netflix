@@ -14,7 +14,7 @@ const FeaturedMovie = ({ item }) => {
       className="featured"
       style={{
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "top center",
         zIndex: 1,
         backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`,
       }}

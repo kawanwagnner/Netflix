@@ -53,7 +53,7 @@
 .container .box-input {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
   margin-bottom: 25px;
 }
 
@@ -66,10 +66,15 @@
   outline: none;
   padding: 0 15px 0 15px;
   border-radius: 5px;
+  font-weight: normal;
 }
 
 .container .box-input input:hover {
-  background-color: #444;
+  opacity: 1;
+}
+
+.password {
+  margin-bottom: 30px;
 }
 
 .container .box-input .btn {
@@ -80,13 +85,15 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  text-decoration: none;
   border-radius: 5px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
-.container .box-input .btn:hover {
-  background-color: #e60039;
+.btn:hover {
+  opacity: 0.7;
 }
 
 .support {

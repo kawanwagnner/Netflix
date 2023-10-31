@@ -1,9 +1,50 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import "./index.css";
 
 const SignUp = () => {
   const link = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [messageErrorEmail, setMessageErrorEmail] = useState("");
+  const [messageErrorPassword, setMessageErrorPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validar o email aqui
+    let validEmail;
+    let validPassword;
+
+    const minPasswordLength = 4;
+    const maxPasswordLength = 60;
+
+    if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+      setMessageErrorEmail("Informe um email ou número de telefone válido.");
+      validEmail = false;
+    } else {
+      validEmail = true;
+      setMessageErrorEmail("");
+    }
+
+    validPassword =
+      password.length >= minPasswordLength &&
+      password.length <= maxPasswordLength;
+    setMessageErrorPassword(
+      validPassword
+        ? ""
+        : `A senha deve ter entre ${minPasswordLength} e ${maxPasswordLength} caracteres.`
+    );
+
+    if (validEmail && validPassword) {
+      setMessageErrorEmail("");
+      setMessageErrorPassword("");
+      alert("Sucesso!!");
+      link("/preview");
+    }
+  };
 
   return (
     <div id="body">
@@ -18,12 +59,32 @@ const SignUp = () => {
       <section className="container">
         <div className="login">
           <h2>Entrar</h2>
-          <form className="box-input">
-            <input type="email" placeholder="Email ou número de telefone" />
-            <input type="password" placeholder="Senha" />
-            <a href="#" className="btn">
+          <form className="box-input" onSubmit={handleSubmit}>
+            <input
+              className="email"
+              type="email"
+              placeholder="Email ou número de telefone"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {messageErrorEmail && (
+              <div className="message-error-email">{messageErrorEmail}</div>
+            )}
+            <input
+              className="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Senha"
+            />
+            {messageErrorPassword && (
+              <div className="message-error-password">
+                {messageErrorPassword}
+              </div>
+            )}
+            <button type="submit" className="btn">
               Entrar
-            </a>
+            </button>
           </form>
           <div className="support">
             <div className="remember">
@@ -47,6 +108,7 @@ const SignUp = () => {
           </p>
         </div>
       </section>
+      <footer>Netflix</footer>
     </div>
   );
 };
