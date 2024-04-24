@@ -48,7 +48,7 @@ const SignUp = () => {
 
   return (
     <div id="body">
-      <header className="header">
+      <header>
         <img
           onClick={() => link("/")}
           id="logo"
@@ -108,7 +108,7 @@ const SignUp = () => {
           </p>
         </div>
       </section>
-      <footer>Netflix</footer>
+      {/* <footer>Netflix</footer> */}
     </div>
   );
 };

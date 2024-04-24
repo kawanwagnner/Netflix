@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "../pages/SignUp/index";
 import AuthHome from "../pages/AuthHome/index";
 import Profile from "../pages/Profile/index";

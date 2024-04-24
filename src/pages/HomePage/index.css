@@ -435,7 +435,7 @@ strong {
 .container-reverse {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: auto;
@@ -468,7 +468,7 @@ strong {
 
 .container-message {
   z-index: 1;
-  width: 100%;
+  width: 35%;
   margin-left: 130px;
   display: block;
 }
@@ -496,6 +496,17 @@ strong {
 .container-flex-three {
   position: relative;
   margin-right: 180px;
+}
+
+.container-flex-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.container-flex-three .container-message {
+  width: 35%;
 }
 
 .container-video-reverse {
@@ -787,10 +798,9 @@ strong {
 .rodape {
   width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding: 50px 300px;
   background-color: #000;
-  margin: 0;
-  padding: 0 80px;
+  transform: translateX(-5%);
 }
 
 .rodape h4 {

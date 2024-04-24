@@ -115,7 +115,7 @@ const HomePage = () => {
               um espaço feito só para elas, sem pagar a mais por isso.
             </p>
           </div>
-          <div className="container-video">
+          <div className="container-image">
             <img
               alt="Mock"
               src="https://occ-0-1310-1740.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABUIQf-EOyyk3NFohgiSUVv5tl73COXhof_N8Gz2GD6IqJ0Cz-DzUfRzj2NhSocLHDrNUlFL3NK2fDG6MCKzVHt3kCmSOjrf4SuVb.png?r=190"
