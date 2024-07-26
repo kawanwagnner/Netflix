@@ -69,7 +69,7 @@ const HomePage = () => {
               aparelhos de Blu-ray e outros dispositivos.
             </p>
           </div>
-          <div className="container-video">
+          <div className="container-video one">
             <div className="video-e-img">
               <img
                 alt="Mock"
@@ -85,15 +85,15 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container-reverse hr">
-          <div className="container-message">
+          <div className="container-message two-message">
             <h1 className="title-mock">Assista onde quiser</h1>
             <p className="text-mock">
               Assista a quantos filmes e séries quiser no celular, tablet,
               laptop e TV.
             </p>
           </div>
-          <div className="container-video-reverse">
-            <div className="video-e-img-reverse">
+          <div className="container-video-reverse two">
+            <div className="video-e-img-reverse two-mock">
               <img
                 alt="Mock"
                 src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
@@ -109,8 +109,8 @@ const HomePage = () => {
         </div>
         <div className="container-flex-three hr">
           <div className="container-message">
-            <h1 className="title-mock">Crie perfis para crianças</h1>
-            <p className="text-mock">
+            <h1 className="title-mock-specific">Crie perfis para crianças</h1>
+            <p className="text-mock-specific">
               Deixe as crianças se aventurarem com seus personagens favoritos em
               um espaço feito só para elas, sem pagar a mais por isso.
             </p>
@@ -123,13 +123,13 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container-reverse hr">
-          <div className="container-message">
+          <div className="container-message container-message-three">
             <h1 className="title-mock">Baixe séries para assistir offline</h1>
             <p className="text-mock">
               Disponíveis somente em planos sem anúncios.
             </p>
           </div>
-          <div className="container-video-reverse">
+          <div className="container-video-reverse three">
             <img
               alt="Mock"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
