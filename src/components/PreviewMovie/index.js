@@ -139,7 +139,7 @@ export default ({ item }) => {
                   <div className={styles.previewMovieBodyDetailsLeft}>
                     <div>
                       <div className={styles.tagsRelevance}>
-                        {item.vote_average * 10}% relevante
+                        {(item.vote_average * 10).toFixed(2)}% relevante
                       </div>
                       <div className={styles.tagsYear}>
                         {item.release_date ? (

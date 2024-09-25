@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="https://github.com/gustavo-nt/netflix-clone/blob/master/public/logo.png" alt="logo" height="75"/>
+  <img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/logo.png" alt="logo" height="75"/>
 </h4>
 
 <h1 align="center">
@@ -42,9 +42,9 @@ UI Clone do serviço de streaming - Netflix, com o uso da API fornecida pelo The
 
 ### ✅ Demonstração
 
-<img src="https://github.com/gustavo-nt/netflix-clone/blob/master/public/github/featured_movie.png" />
-<img src="https://github.com/gustavo-nt/netflix-clone/blob/master/public/github/preview_movie.png" />
-<img src="https://github.com/gustavo-nt/netflix-clone/blob/master/public/github/movie_rows.png" />
+<img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/github/featured_movie.png" />
+<img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/github/preview_movie.png" />
+<img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/github/movie_rows.png" />
 
 ### ⚙ Pré-requisitos
 
@@ -56,7 +56,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/gustavo-nt/netflix-clone
+$ git clone https://github.com/kawanwagnner/Netflix.git
 
 # Instale as dependências
 $ yarn ou npm
