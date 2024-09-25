@@ -41,10 +41,9 @@
 UI Clone do serviço de streaming - Netflix, com o uso da API fornecida pelo The Movie Database. Esse Projeto foi desenvolvido durante a live ministrada pelo professor Boenick Lacerda.
 
 ### ✅ Demonstração
-
-<img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/github/featured_movie.png" />
-<img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/github/preview_movie.png" />
-<img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/github/movie_rows.png" />
+<img src="https://github.com/kawanwagnner/Netflix/blob/main/public/github/featured_movie.png" />
+<img src="https://github.com/kawanwagnner/Netflix/blob/main/public/github/preview_movie.png" />
+<img src="https://https://github.com/kawanwagnner/Netflix/blob/main/public/github/movie_rows.png" />
 
 ### ⚙ Pré-requisitos
 
@@ -94,4 +93,4 @@ Esse projeto está sob a licença MIT.
 
 <hr/>
 
-Feito por Kawan Wagnner
+Trabalhado por Kawan Wagnner
