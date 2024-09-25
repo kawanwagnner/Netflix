@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="https://github.com/kawanwagnner/Netflix.git/blob/master/public/logo.png" alt="logo" height="75"/>
+  <img src="https://github.com/kawanwagnner/Netflix/blob/main/public/logo.png" alt="logo" height="75"/>
 </h4>
 
 <h1 align="center">
